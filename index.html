@@ -99,20 +99,33 @@
                         <legend class="section-legend">
                             <i class="bi bi-person-fill" id="person"></i> Personal Information
                         </legend>
-                        <label for="personal-info-first-name"> First Name:<span class="req-star"> *</span> </label>
-                        <input type="text" required name="firstName" id="personal-info-first-name" />
 
-                        <label for="personal-info-last-name"> Last Name:<span class="req-star"> *</span> </label>
-                        <input type="text" required name="lastName" id="personal-info-last-name">
+                        <div class="items2">
+                            <div class="input-box">
+                                <label for="personal-info-first-name"> First Name:<span class="req-star"> *</span> </label>
+                                <input type="text" required name="firstName" id="personal-info-first-name" />
+                            </div>
+    
+                            <div class="input-box">
+                                <label for="personal-info-last-name"> Last Name:<span class="req-star"> *</span> </label>
+                                <input type="text" required name="lastName" id="personal-info-last-name">
+                            </div>
+                        </div>
 
-                        <label for="personal-info-dob">Date Of Birth: </label>
-                        <input type="date" name="DOB" id="personal-info-dob">
-
-                        <label>Gender: </label>
-                        <input type="radio" name="gender" id="male" value="male">
-                        <label for="male"> Male </label>
-                        <input type="radio" name="gender" id="female" value="female">
-                        <label for="female"> Female </label>
+                        <div class="items2">
+                            <div class="input-box">
+                                <label for="personal-info-dob">Date Of Birth: </label>
+                                <input type="date" name="DOB" id="personal-info-dob">
+                            </div>
+    
+                            <div class="input-box">
+                                <label>Gender: </label>
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label for="male"> Male </label>
+                                <input type="radio" name="gender" id="female" value="female">
+                                <label for="female"> Female </label>
+                            </div>
+                        </div>
 
                         <div class="section-nav-btns">
                             <button type="button" class="btn-next" onclick="goToSection('section-2',2)"><i class="bi bi-arrow-right"></i>Next</button>

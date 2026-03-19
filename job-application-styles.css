@@ -278,3 +278,45 @@ body {
     border-radius: 999px;
     transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+fieldset{
+    border: none;
+}
+
+fieldset legend i {
+    color: var(--accent);
+    padding-right: 0.8rem;
+}
+
+fieldset legend {
+    font-family: var(--font-display);
+    margin-bottom: 2rem;
+}
+
+.items2 {
+    display: inline-flex;
+    width: 100%;
+    flex:1;
+}
+
+
+.input-box {
+    display: inline-flex;
+    flex-direction: column;
+    flex:1;
+    margin: 0 2rem 2rem;
+}
+
+.input-box label{
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+}
+
+.input-box input{
+    max-width: 350px;
+    height: 35px;
+    border-radius: var(--radius-sm);
+    background: var(--border);
+    border: 0.1rem solid var(--border);
+}
