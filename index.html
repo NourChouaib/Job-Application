@@ -12,9 +12,16 @@
 </head>
 
 <body>
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+
     <div class="page-wrapper">
         <aside class="sidebar">
-            <div class="sidebar-logo"></div>
+            <div class="sidebar-logo">
+                <span class="logo-mark">T</span>
+                <span class="logo-text">TechStart</span>
+            </div>
 
             <nav class="step-nav">
                 <button class="step-btn" data-section="section-1" onclick="showSection('section-1',this)">
@@ -25,7 +32,7 @@
     
                 <button class="step-btn" data-section="section-2" onclick="showSection('section-2',this)">
                     <span class="step-icon"><i class="bi bi-telephone-fill"></i></span>
-                    <span class="step-label">Details</span>
+                    <span class="step-label">Contact Details</span>
                     <span class="step-num">02</span>
                 </button>
     
@@ -55,12 +62,15 @@
     
                 <button class="step-btn" data-section="section-7" onclick="showSection('section-7',this)">
                     <span class="step-icon"><i class="bi bi-check-circle-fill"></i></span>
-                    <span class="step-label">Submit Application</span>
+                    <span class="step-label">Review & Submit</span>
                     <span class="step-num">07</span>
                 </button>  
             </nav>
 
-            <div class="sidebar-footer"></div>
+            <div class="sidebar-footer">
+                <p>&copy; 2024 TechStart.</p>
+                <p>Equal opportunity employer.</p>
+            </div>
 
         </aside>
 
@@ -84,8 +94,11 @@
 
 
                 <!-- Section 1: Personal Information -->
-                <div class="section">
-                    <fieldset id="section-1">
+                
+                    <fieldset id="section-1" class="form-section">
+                        <legend class="section-legend">
+                            <i class="bi bi-person-fill" id="person"></i> Personal Information
+                        </legend>
                         <label for="personal-info-first-name"> First Name:* </label>
                         <input type="text" required name="firstName" id="personal-info-first-name" />
 
@@ -100,12 +113,18 @@
                         <label for="male"> Male </label>
                         <input type="radio" name="gender" id="female" value="female">
                         <label for="female"> Female </label>
+
+                        <div class="section-nav-btns">
+                            <button type="button" class="btn-next" onclick="goToSection('section-2',2)"><i class="bi bi-arrow-right"></i>Next</button>
+                        </div>
                     </fieldset>
-                </div>
 
                 <!-- Section 2: Contact Details -->
-                <div class="section">
-                    <fieldset id="section-2">
+                
+                    <fieldset id="section-2" class="form-section hidden">
+                        <legend class="section-legend">
+                            <i class="bi bi-telephone-fill"></i> Contact Details
+                        </legend>
                         <!-- Add your fields here -->
                         <label for="email">Email Address:* </label>
                         <input type="email" id="email" name="email" required>
@@ -151,13 +170,19 @@
                             <option value="AU">Australia</option>
                             <option value="ZA">South Africa</option>
                         </select>
+                        <div class="section-nav-btns">
+                            <button type="button" class="btn-back" onclick="goToSection('section-1',1)"><i class="bi bi-arrow-left"></i> Back</button>
+                            <button type="button" class="btn-next" onclick="goToSection('section-3',3)">Next<i class="bi bi-arrow-right"></i></button>
+                        </div>
                     </fieldset>
-                </div>
 
                 <!-- Section 3: Position & Experience -->
-                <div class="section">
-                    <fieldset id="section-3">
-                        <!-- Add your fields here -->
+                
+                    <fieldset id="section-3" class="form-section hidden">
+                        <legend class="section-legend">
+                            <i class="bi bi-briefcase-fill"></i> Position & Experience
+                        </legend>
+
                         <label for="position">Position applying for:</label>
                         <select id="position" name="position">
                             <option value="software_developer">Software Developer</option>
@@ -217,12 +242,19 @@
                             <option value="freelancer">Freelancer</option>
                             <option value="other">Other</option>
                         </select>
+
+                        <div class="section-nav-btns">
+                            <button type="button" class="btn-back" onclick="goToSection('section-2',2)"><i class="bi bi-arrow-left"></i> Back</button>
+                            <button type="button" class="btn-next" onclick="goToSection('section-4',4)">Next<i class="bi bi-arrow-right"></i></button>
+                        </div>
                     </fieldset>
-                </div>
 
                 <!-- Section 4: Skills & Qualifications -->
-                <div class="section">
-                    <fieldset id="section-4">
+                
+                    <fieldset id="section-4" class="form-section hidden">
+                        <legend class="section-legend">
+                            <i class="bi bi-award-fill"></i> Skills & Qualifications
+                        </legend>
 
                         <label>Highest education level: </label>
 
@@ -297,14 +329,20 @@
                             Previous salary: <input type="number" id="previous-salary" name="previous-salary"> (in
                             dollars)
                         </label>
+                        <div class="section-nav-btns">
+                            <button type="button" class="btn-back" onclick="goToSection('section-3',3)"><i class="bi bi-arrow-left"></i> Back</button>
+                            <button type="button" class="btn-next" onclick="goToSection('section-5',5)">Next<i class="bi bi-arrow-right"></i></button>
+                        </div>
                     </fieldset>
-                </div>
 
                 <!-- Section 5: Availability & Preferences -->
-                <div class="section">
-                    <fieldset id="section-5">
-                        <label>Earliest start date: <input type="date" id="earliest-start-date"
-                                name="earliest-start-date"></label>
+                
+                    <fieldset id="section-5" class="form-section hidden">
+                        <legend class="section-legend">
+                            <i class="bi bi-clock-fill"></i> Availability & Preferences
+                        </legend>
+                        <label>Earliest start date: </label>
+                        <input type="date" id="earliest-start-date" name="earliest-start-date">
 
                         <label>Work preference: </label>
 
@@ -329,18 +367,17 @@
 
 
 
-                        <label>Willing to reloctae? </label>
+                        <label>Willing to Relocate? </label>
 
-                        <label><input type="radio" name="wtr" value="yes"> yes</label>
+                        <label><input type="radio" name="wtr" value="yes"> Yes</label>
 
-                        <label><input type="radio" name="wtr" value="no"> no</label>
+                        <label><input type="radio" name="wtr" value="no"> No</label>
 
-                        <label><input type="radio" name="wtr" value="maybe"> maybe</label>
+                        <label><input type="radio" name="wtr" value="maybe"> Maybe</label>
 
 
 
-                        <label>
-                            Expected salary range:
+                        <label for="expected-salary"> Expected salary range: </label>
                             <select id="expected-salary" name="expected-salary">
                                 <option value="30k-40k"> $30,000 - $40,000</option>
                                 <option value="40k-55k"> $40,000 - $55,000</option>
@@ -350,50 +387,69 @@
                                 <option value="100+k"> $100,000+</option>
                                 <option value="prefer-to-discuss"> Prefer to discuss</option>
                             </select>
-                        </label>
+                        <div class="section-nav-btns">
+                            <button type="button" class="btn-back" onclick="goToSection('section-4',4)"><i class="bi bi-arrow-left"></i> Back</button>
+                            <button type="button" class="btn-next" onclick="goToSection('section-6',6)">Next<i class="bi bi-arrow-right"></i></button>
+                        </div>
                     </fieldset>
-                </div>
 
                 <!-- Section 6: Application Materials -->
-                <div class="section">
-                    <fieldset id="section-6">
-                        <label>Cover letter:*
-
-                            <textarea name="cover-letter" rows="5"
-                                placeholder="Tell us why you're intrested in working at TechStart and what makes you a great fit for this role..."
+                
+                    <fieldset id="section-6" class="form-section hidden">
+                        <legend class="section-legend">
+                            <i class="bi bi-file-earmark-fill"></i> Application Materials
+                        </legend>
+                        <label for="cover-letter">Cover letter:* </label>
+                            <textarea name="cover-letter" rows="5" id="cover-letter"
+                                placeholder="Tell us why you're interested in working at TechStart and what makes you a great fit for this role..."
                                 required></textarea>
-                        </label>
 
-                        <label>How did you hear about us?
-                            <select name="how-did-you-hear">
+                        <label for="how-did-you-hear">How did you hear about us?</label>
+                            <select id="how-did-you-hear" name="how-did-you-hear">
                                 <option value="Company website"> Company website </option>
                                 <option value="Job board"> Job board(Indeed, LinkedIn, etc.) </option>
                                 <option value="Social media"> Social media </option>
-                                <option value="Freind/colleague referral"> Freind/colleague referral </option>
+                                <option value="Friend/colleague referral"> Friend/colleague referral </option>
                                 <option value="Recruiter"> Recruiter </option>
                                 <option value="Career fair"> Career fair </option>
                                 <option value="Other"> Other </option>
                             </select>
-                        </label>
+                        
 
-                        <label>Additional comments:
+                        <label for="additional-comments">Additional comments:</label>
 
-                            <textarea name="additional-comments" rows="3"
+                            <textarea id="additional-comments" name="additional-comments" rows="3"
                                 placeholder="Any additional information you'd like to share..."></textarea>
-                        </label>
+
+                        <div class="section-nav-btns">
+                            <button type="button" class="btn-back" onclick="goToSection('section-5',5)"><i class="bi bi-arrow-left"></i> Back</button>
+                            <button type="button" class="btn-next" onclick="goToSection('section-7',7)">Review & Submit<i class="bi bi-arrow-right"></i></button>
+                        </div>
                     </fieldset>
-                </div>
 
                 <!-- Submission Section -->
-                <fieldset id="section-7">
-                    <button type="submit">Submit</button>
-
-                    <button type="reset">Clear Form</button>
-
-                    <label>
+                <fieldset id="section-7" class="form-section hidden">
+                    <legend class="section-legend">
+                        <i class="bi bi-check-circle-fill"></i> Review & Submit
+                    </legend>
+                    <div class="submit-card">
+                        <div class="submit-icon-wrap">
+                            <i class="bi bi-send-fill"></i>
+                        </div>
+                        <h3>Almost there!</h3>
+                        <p>Review your application carefully before submitting</p>
+                    </div>
+                
+                    <label class="terms-label">
                         <input type="checkbox" name="Terms and Conditions" id="Terms-and-Conditions" required>
-                        I agree the terms and conditions*
+                        <span>I agree to the <a href="#">Terms and Conditions</a><span class="req-star">*</span></span>
                     </label>
+                    
+                    <div class="section-nav-btns">
+                        <button type="button" class="btn-back" onclick="goToSection('section-6',6)"><i class="bi bi-arrow-left"></i> Back</button>
+                        <button type="reset" class="btn-reset"><i class="bi bi-arrow-counterclockwise"></i> Clear Form</button>
+                        <button type="submit" class="btn-submit"><i class="bi bi-check-lg"></i> Submit</button>
+                    </div>
                 </fieldset>
 
 
@@ -401,9 +457,6 @@
 
         </main>
 
-        <footer>
-            <p>&copy; 2024 TechStart. Equal opportunity employer.</p>
-        </footer>
     </div>
     <script>
         const sections = Array.from(document.getElementsByTagName('fieldset'))
