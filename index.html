@@ -82,7 +82,7 @@
                 <div class="form-header">
                     <div class="header-tag">We Are Hiring</div>
                     <h1>Join Our Team</h1>
-                    <p>Fill out all required fields marked with <span class="req-star">*</span></p>
+                    <p>Fill out all required fields marked with <span class="req-star">*</span> .</p>
                 </div>
             </header>
 
@@ -99,10 +99,10 @@
                         <legend class="section-legend">
                             <i class="bi bi-person-fill" id="person"></i> Personal Information
                         </legend>
-                        <label for="personal-info-first-name"> First Name:* </label>
+                        <label for="personal-info-first-name"> First Name:<span class="req-star"> *</span> </label>
                         <input type="text" required name="firstName" id="personal-info-first-name" />
 
-                        <label for="personal-info-last-name"> Last Name:* </label>
+                        <label for="personal-info-last-name"> Last Name:<span class="req-star"> *</span> </label>
                         <input type="text" required name="lastName" id="personal-info-last-name">
 
                         <label for="personal-info-dob">Date Of Birth: </label>
@@ -126,16 +126,16 @@
                             <i class="bi bi-telephone-fill"></i> Contact Details
                         </legend>
                         <!-- Add your fields here -->
-                        <label for="email">Email Address:* </label>
+                        <label for="email">Email Address:<span class="req-star"> *</span> </label>
                         <input type="email" id="email" name="email" required>
 
-                        <label for="phone-number">Phone number:* </label>
+                        <label for="phone-number">Phone number:<span class="req-star"> *</span> </label>
                         <input type="tel" name="phone-number" id="phone-number" required>
 
                         <label for="address"> Street Address: </label>
                         <input type="text" id="address" name="address">
 
-                        <label for="city"> City:* </label>
+                        <label for="city"> City:<span class="req-star"> *</span> </label>
                         <input type="text" id="city" name="city" required>
 
                         <label for="state"> State/Province: </label>
@@ -399,7 +399,7 @@
                         <legend class="section-legend">
                             <i class="bi bi-file-earmark-fill"></i> Application Materials
                         </legend>
-                        <label for="cover-letter">Cover letter:* </label>
+                        <label for="cover-letter">Cover letter:<span class="req-star"> *</span> </label>
                             <textarea name="cover-letter" rows="5" id="cover-letter"
                                 placeholder="Tell us why you're interested in working at TechStart and what makes you a great fit for this role..."
                                 required></textarea>
@@ -442,7 +442,7 @@
                 
                     <label class="terms-label">
                         <input type="checkbox" name="Terms and Conditions" id="Terms-and-Conditions" required>
-                        <span>I agree to the <a href="#">Terms and Conditions</a><span class="req-star">*</span></span>
+                        <span>I agree to the <a href="#">Terms and Conditions</a><span class="req-star"> *</span></span>
                     </label>
                     
                     <div class="section-nav-btns">
@@ -459,23 +459,34 @@
 
     </div>
     <script>
-        const sections = Array.from(document.getElementsByTagName('fieldset'))
-        for (let s of sections) {
-            s.className = 'hidden'
-        }
-        showSection('section-1')
-        console.log(sections)
-        function showSection(id) {
-            const section = document.getElementById(id)
-            for (let s of sections) {
-                if (s.id != id) {
-                    s.className = 'hidden'
-                }
+        const fields = Array.from(document.getElementsByClassName("form-section"))
+        const btns = Array.from(document.getElementsByClassName("step-btn"))
+
+        function showSection(id, stepNum) {
+            for(const field of fields){
+                field.classList.add("hidden")
             }
 
-            section.className = 'shown'
+            const currentFeild = document.getElementById(id) 
+            currentFeild.classList.remove("hidden")
 
+            let currentButton = null;
+            for(const btn of btns){
+                btn.classList.remove("active")
+                if(btn.dataset.section == id){
+                    currentButton = btn;
+                }
+            }
+            currentButton.classList.add("active")    
         }
+
+        function goToSection(section,num){
+            showSection(section,this)
+            const width = num / 7 * 100
+            const progressBar = document.getElementById("progress-bar")
+            progressBar.setAttribute('style',`width:${width}%`)
+        }
+        
     </script>
 </body>
 

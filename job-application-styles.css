@@ -212,3 +212,69 @@ body {
     color: var(--text-muted);
     line-height: 1.7;
 }
+
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+
+.main-content{
+    flex: 1;
+    padding: 2.5rem 3rem 4rem;
+    max-width: 900px;
+}
+
+.header-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-glow);
+    border: 1px solid rgba(79, 138, 255, 0.25);
+    border-radius: 999px;
+    padding: 0.25rem 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.form-header {
+    padding: 0 0 3rem;
+}
+
+
+.form-header h1{
+    font-family: var(--font-display);
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.form-header p{
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.req-star {
+    color: var(--accent);
+}
+
+.progress-bar-wrap {
+    height: 3px;
+    background-color: var(--border);
+    border-radius:999px;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    border-radius: 999px;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
