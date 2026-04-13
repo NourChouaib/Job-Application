@@ -396,6 +396,15 @@ select option{
     color: var(--accent);
 }
 
+.section-nav-btns {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--border);
+    align-items: center;
+}
+
 .btn-next, .btn-back, .btn-reset, .btn-submit {
     display: inline-flex;
     align-items: center;
@@ -413,11 +422,12 @@ select option{
 .btn-next {
     background: var(--accent);
     color: #fff;
-    float: right;
+    margin-left: auto;
     box-shadow: 0 4px 20px rgba(79, 138, 255, 0.3);
 }
 
 .btn-back {
-    background: var(--border);
+    background: var(--surface-2);
     color: var(--text-secondary);
+    border: 1px solid var(--border);
 }
