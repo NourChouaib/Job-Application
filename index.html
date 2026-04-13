@@ -29,42 +29,42 @@
                     <span class="step-label">Personal Information</span>
                     <span class="step-num">01</span>
                 </button>
-    
+
                 <button class="step-btn" data-section="section-2" onclick="showSection('section-2',2)">
                     <span class="step-icon"><i class="bi bi-telephone-fill"></i></span>
                     <span class="step-label">Contact Details</span>
                     <span class="step-num">02</span>
                 </button>
-    
+
                 <button class="step-btn" data-section="section-3" onclick="showSection('section-3',3)">
                     <span class="step-icon"><i class="bi bi-briefcase-fill"></i></span>
                     <span class="step-label">Position & Experience</span>
                     <span class="step-num">03</span>
                 </button>
-    
+
                 <button class="step-btn" data-section="section-4" onclick="showSection('section-4',4)">
                     <span class="step-icon"><i class="bi bi-award-fill"></i></span>
                     <span class="step-label">Skills & Qualifications</span>
                     <span class="step-num">04</span>
                 </button>
-    
+
                 <button class="step-btn" data-section="section-5" onclick="showSection('section-5',5)">
                     <span class="step-icon"><i class="bi bi-clock-fill"></i></span>
                     <span class="step-label">Availability & Preferences</span>
                     <span class="step-num">05</span>
                 </button>
-    
+
                 <button class="step-btn" data-section="section-6" onclick="showSection('section-6',6)">
                     <span class="step-icon"><i class="bi bi-file-earmark-fill"></i></span>
                     <span class="step-label">Application Materials</span>
                     <span class="step-num">06</span>
                 </button>
-    
+
                 <button class="step-btn" data-section="section-7" onclick="showSection('section-7',7)">
                     <span class="step-icon"><i class="bi bi-check-circle-fill"></i></span>
                     <span class="step-label">Review & Submit</span>
                     <span class="step-num">07</span>
-                </button>  
+                </button>
             </nav>
 
             <div class="sidebar-footer">
@@ -94,406 +94,435 @@
 
 
                 <!-- Section 1: Personal Information -->
-                
-                    <fieldset id="section-1" class="form-section">
-                        <legend class="section-legend">
-                            <i class="bi bi-person-fill" id="person"></i> Personal Information
-                        </legend>
 
-                        <div class="items2">
-                            <div class="input-box">
-                                <label for="personal-info-first-name"> First Name:<span class="req-star"> *</span> </label>
-                                <input type="text" required name="firstName" id="personal-info-first-name" />
-                            </div>
-    
-                            <div class="input-box">
-                                <label for="personal-info-last-name"> Last Name:<span class="req-star"> *</span> </label>
-                                <input type="text" required name="lastName" id="personal-info-last-name">
-                            </div>
+                <fieldset id="section-1" class="form-section">
+                    <legend class="section-legend">
+                        <i class="bi bi-person-fill" id="person"></i> Personal Information
+                    </legend>
+
+                    <div class="items2">
+                        <div class="input-box">
+                            <label for="personal-info-first-name"> First Name:<span class="req-star"> *</span> </label>
+                            <input type="text" required name="firstName" id="personal-info-first-name" />
                         </div>
 
-                        <div class="items2">
-                            <div class="input-box">
-                                <label for="personal-info-dob">Date Of Birth: </label>
-                                <input type="date" name="DOB" id="personal-info-dob">
-                            </div>
-    
-                            <div class="input-box">
-                                <label>Gender: </label>
-                                <div class="radio-pill-group">
-                                    <div class="radio-pill">
-                                        <input type="radio" name="gender" id="male" value="male">
-                                        <label for="male"> Male </label>
-                                    </div>
-                                    <div class="radio-pill">
-                                        <input type="radio" name="gender" id="female" value="female">
-                                        <label for="female"> Female </label>
-                                    </div>
+                        <div class="input-box">
+                            <label for="personal-info-last-name"> Last Name:<span class="req-star"> *</span> </label>
+                            <input type="text" required name="lastName" id="personal-info-last-name">
+                        </div>
+                    </div>
 
+                    <div class="items2">
+                        <div class="input-box">
+                            <label for="personal-info-dob">Date Of Birth: </label>
+                            <input type="date" name="DOB" id="personal-info-dob">
+                        </div>
+
+                        <div class="input-box">
+                            <label>Gender: </label>
+                            <div class="radio-pill-group">
+                                <div class="radio-pill">
+                                    <input type="radio" name="gender" id="male" value="male">
+                                    <label for="male"> Male </label>
                                 </div>
+                                <div class="radio-pill">
+                                    <input type="radio" name="gender" id="female" value="female">
+                                    <label for="female"> Female </label>
+                                </div>
+
                             </div>
                         </div>
+                    </div>
 
-                        <div class="section-nav-btns">
-                            <button type="button" class="btn-next" onclick="goToSection('section-2',2)"><i class="bi bi-arrow-right"></i>Next</button>
-                        </div>
-                    </fieldset>
+                    <div class="section-nav-btns">
+                        <button type="button" class="btn-next" onclick="goToSection('section-2',2)"><i
+                                class="bi bi-arrow-right"></i>Next</button>
+                    </div>
+                </fieldset>
 
                 <!-- Section 2: Contact Details -->
-                
-                    <fieldset id="section-2" class="form-section hidden">
-                        <legend class="section-legend">
-                            <i class="bi bi-telephone-fill"></i> Contact Details
-                        </legend>
-                        <!-- Add your fields here -->
-                        <div class="items2">
-                            <div class="input-box">
-                                <label for="email">Email Address:<span class="req-star"> *</span> </label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-   
-                           <div class="input-box">
-                               <label for="phone-number">Phone number:<span class="req-star"> *</span> </label>
-                               <input type="tel" name="phone-number" id="phone-number" required>
-                           </div>
+
+                <fieldset id="section-2" class="form-section hidden">
+                    <legend class="section-legend">
+                        <i class="bi bi-telephone-fill"></i> Contact Details
+                    </legend>
+                    <!-- Add your fields here -->
+                    <div class="items2">
+                        <div class="input-box">
+                            <label for="email">Email Address:<span class="req-star"> *</span> </label>
+                            <input type="email" id="email" name="email" required>
                         </div>
 
-                        <div class="items2">
-                            <div class="input-box">
-                                <label for="address"> Street Address: </label>
-                                <input type="text" id="address" name="address">
-                            </div>
+                        <div class="input-box">
+                            <label for="phone-number">Phone number:<span class="req-star"> *</span> </label>
+                            <input type="tel" name="phone-number" id="phone-number" required>
                         </div>
-                        
-                        <div class="items2">
-                            <div class="input-box">
-                                <label for="city"> City:<span class="req-star"> *</span> </label>
-                                <input type="text" id="city" name="city" required>
-                            </div>
-                            
-                            <div class="input-box">
-                                <label for="state"> State/Province: </label>
-                                <select name="state" id="state">
-                                    <option value="">--Select a state--</option>
-                                    <option value="CA">California</option>
-                                    <option value="TX">Texas</option>
-                                    <option value="FL">Florida</option>
-                                    <option value="NY">New York</option>
-                                    <option value="IL">Illinois</option>
-                                    <option value="PA">Pennsylvania</option>
-                                    <option value="OH">Ohio</option>
-                                    <option value="GA">Georgia</option>
-                                    <option value="NC">North Carolina</option>
-                                    <option value="MI">Michigan</option>
-                                </select>
-    
-                            </div>
-    
-                            <div class="input-box">
-                                <label for="zip">ZIP/Postal code: </label>
-                                <input type="text" id="zip" name="zip">
-                            </div>
+                    </div>
+
+                    <div class="items2">
+                        <div class="input-box">
+                            <label for="address"> Street Address: </label>
+                            <input type="text" id="address" name="address">
+                        </div>
+                    </div>
+
+                    <div class="items2">
+                        <div class="input-box">
+                            <label for="city"> City:<span class="req-star"> *</span> </label>
+                            <input type="text" id="city" name="city" required>
                         </div>
 
-                        <div class="items2">
-                            <div class="input-box">
-                                <label for="country"> Country: </label>
-                                <select id="country" name="country">
-                                    <option value="">--Select a country--</option>
-                                    <option value="US">United States</option>
-                                    <option value="CA">Canada</option>
-                                    <option value="BR">Brazil</option>
-                                    <option value="UK">United Kingdom</option>
-                                    <option value="DE">Germany</option>
-                                    <option value="FR">France</option>
-                                    <option value="IN">India</option>
-                                    <option value="JP">Japan</option>
-                                    <option value="AU">Australia</option>
-                                    <option value="ZA">South Africa</option>
-                                </select>
-                            </div>
+                        <div class="input-box">
+                            <label for="state"> State/Province: </label>
+                            <select name="state" id="state">
+                                <option value="">--Select a state--</option>
+                                <option value="CA">California</option>
+                                <option value="TX">Texas</option>
+                                <option value="FL">Florida</option>
+                                <option value="NY">New York</option>
+                                <option value="IL">Illinois</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="OH">Ohio</option>
+                                <option value="GA">Georgia</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="MI">Michigan</option>
+                            </select>
+
                         </div>
-                        <div class="section-nav-btns">
-                            <button type="button" class="btn-back" onclick="goToSection('section-1',1)"><i class="bi bi-arrow-left"></i> Back</button>
-                            <button type="button" class="btn-next" onclick="goToSection('section-3',3)">Next<i class="bi bi-arrow-right"></i></button>
+
+                        <div class="input-box">
+                            <label for="zip">ZIP/Postal code: </label>
+                            <input type="text" id="zip" name="zip">
                         </div>
-                    </fieldset>
+                    </div>
+
+                    <div class="items2">
+                        <div class="input-box">
+                            <label for="country"> Country: </label>
+                            <select id="country" name="country">
+                                <option value="">--Select a country--</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="BR">Brazil</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="DE">Germany</option>
+                                <option value="FR">France</option>
+                                <option value="IN">India</option>
+                                <option value="JP">Japan</option>
+                                <option value="AU">Australia</option>
+                                <option value="ZA">South Africa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="section-nav-btns">
+                        <button type="button" class="btn-back" onclick="goToSection('section-1',1)"><i
+                                class="bi bi-arrow-left"></i> Back</button>
+                        <button type="button" class="btn-next" onclick="goToSection('section-3',3)">Next<i
+                                class="bi bi-arrow-right"></i></button>
+                    </div>
+                </fieldset>
 
                 <!-- Section 3: Position & Experience -->
-                
-                    <fieldset id="section-3" class="form-section hidden">
-                        <legend class="section-legend">
-                            <i class="bi bi-briefcase-fill"></i> Position & Experience
-                        </legend>
 
-                        <div class="items2">
-                            <div class="input-box">
-                                <label for="position">Position applying for:</label>
-                                <select id="position" name="position">
-                                    <option value="software_developer">Software Developer</option>
-                                    <option value="web_developer">Web Developer</option>
-                                    <option value="data_analyst">Data Analyst</option>
-                                    <option value="ux_ui_designer">UX/UI Designer</option>
-                                    <option value="project_manager">Project Manager</option>
-                                    <option value="marketing_specialist">Marketing Specialist</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div class="input-box">
-                                <label for="employment">Current employment status:</label>
-                                <select id="employment" name="employment">
-                                    <option value="employed">Employed</option>
-                                    <option value="unemployed">Unemployed</option>
-                                    <option value="student">Student</option>
-                                    <option value="freelancer">Freelancer</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
+                <fieldset id="section-3" class="form-section hidden">
+                    <legend class="section-legend">
+                        <i class="bi bi-briefcase-fill"></i> Position & Experience
+                    </legend>
+
+                    <div class="items2">
+                        <div class="input-box">
+                            <label for="position">Position applying for:</label>
+                            <select id="position" name="position">
+                                <option value="software_developer">Software Developer</option>
+                                <option value="web_developer">Web Developer</option>
+                                <option value="data_analyst">Data Analyst</option>
+                                <option value="ux_ui_designer">UX/UI Designer</option>
+                                <option value="project_manager">Project Manager</option>
+                                <option value="marketing_specialist">Marketing Specialist</option>
+                                <option value="other">Other</option>
+                            </select>
                         </div>
+                        <div class="input-box">
+                            <label for="employment">Current employment status:</label>
+                            <select id="employment" name="employment">
+                                <option value="employed">Employed</option>
+                                <option value="unemployed">Unemployed</option>
+                                <option value="student">Student</option>
+                                <option value="freelancer">Freelancer</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
 
-                        <div class="items2">
-                            <div class="input-box">
-                                <label>Department preference:</label>
-        
-                                <div class="radio-pill-group">
-                                    <div class="radio-pill">
-                                            <input type="radio" name="department" value="engineering" id="engineering"> 
-                                            <label for="engineering">Engineering</label>
-                                    </div>
-            
-                                    <div class="radio-pill">
-                                    
-                                            <input type="radio" name="department" value="design" id="design"> 
-                                            <label for="design">Design</label> 
-                                    </div>
-            
-                                    <div class="radio-pill">
-                                            <input type="radio" name="department" value="marketing" id="marketing">
-                                            <label for="marketing">Marketing</label>  
-                                    </div>
-            
-                                    <div class="radio-pill">
-                                            <input type="radio" name="department" value="sales" id="sales">
-                                            <label for="sales">Sales</label>  
-                                    </div>
-            
-                                    <div class="radio-pill">
-                                            <input type="radio" name="department" value="operations" id="operations">
-                                            <label for="operations">Operations</label> 
-                                    </div>
+                    <div class="items2">
+                        <div class="input-box">
+                            <label>Department preference:</label>
+
+                            <div class="radio-pill-group">
+                                <div class="radio-pill">
+                                    <input type="radio" name="department" value="engineering" id="engineering">
+                                    <label for="engineering">Engineering</label>
+                                </div>
+
+                                <div class="radio-pill">
+
+                                    <input type="radio" name="department" value="design" id="design">
+                                    <label for="design">Design</label>
+                                </div>
+
+                                <div class="radio-pill">
+                                    <input type="radio" name="department" value="marketing" id="marketing">
+                                    <label for="marketing">Marketing</label>
+                                </div>
+
+                                <div class="radio-pill">
+                                    <input type="radio" name="department" value="sales" id="sales">
+                                    <label for="sales">Sales</label>
+                                </div>
+
+                                <div class="radio-pill">
+                                    <input type="radio" name="department" value="operations" id="operations">
+                                    <label for="operations">Operations</label>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="items2">
-                            <div class="input-box">
-                                <label>Experience level:</label>
-                                <div class="radio-pill-group">
-                                    <div class="radio-pill">
-                                        <input type="radio" name="experience" value="entry" id="entry"> 
-                                        <label for="entry">Entry Level (0-2 years)</label>
-                                    </div>
-                                    <div class="radio-pill">
-                                        <input type="radio" name="experience" value="mid" id="mid"> 
-                                        <label for="mid">Mid Level (3-5 years)</label>
-                                    </div>
-                                    <div class="radio-pill">
-                                        <input type="radio" name="experience" value="senior" id="senior"> 
-                                        <label for="senior">Senior Level (6-10 years)</label>
-                                    </div>
-                                    <div class="radio-pill">
-                                        <input type="radio" name="experience" value="lead" id="lead"> 
-                                        <label for="lead">Lead/Manager (10+ years)</label>
-                                    </div>
+                    <div class="items2">
+                        <div class="input-box">
+                            <label>Experience level:</label>
+                            <div class="radio-pill-group">
+                                <div class="radio-pill">
+                                    <input type="radio" name="experience" value="entry" id="entry">
+                                    <label for="entry">Entry Level (0-2 years)</label>
+                                </div>
+                                <div class="radio-pill">
+                                    <input type="radio" name="experience" value="mid" id="mid">
+                                    <label for="mid">Mid Level (3-5 years)</label>
+                                </div>
+                                <div class="radio-pill">
+                                    <input type="radio" name="experience" value="senior" id="senior">
+                                    <label for="senior">Senior Level (6-10 years)</label>
+                                </div>
+                                <div class="radio-pill">
+                                    <input type="radio" name="experience" value="lead" id="lead">
+                                    <label for="lead">Lead/Manager (10+ years)</label>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        
 
-                        <div class="section-nav-btns">
-                            <button type="button" class="btn-back" onclick="goToSection('section-2',2)"><i class="bi bi-arrow-left"></i> Back</button>
-                            <button type="button" class="btn-next" onclick="goToSection('section-4',4)">Next<i class="bi bi-arrow-right"></i></button>
-                        </div>
-                    </fieldset>
+
+                    <div class="section-nav-btns">
+                        <button type="button" class="btn-back" onclick="goToSection('section-2',2)"><i
+                                class="bi bi-arrow-left"></i> Back</button>
+                        <button type="button" class="btn-next" onclick="goToSection('section-4',4)">Next<i
+                                class="bi bi-arrow-right"></i></button>
+                    </div>
+                </fieldset>
 
                 <!-- Section 4: Skills & Qualifications -->
-                
-                    <fieldset id="section-4" class="form-section hidden">
-                        <legend class="section-legend">
-                            <i class="bi bi-award-fill"></i> Skills & Qualifications
-                        </legend>
 
-                        <label>Highest education level: </label>
+                <fieldset id="section-4" class="form-section hidden">
+                    <legend class="section-legend">
+                        <i class="bi bi-award-fill"></i> Skills & Qualifications
+                    </legend>
 
-                        <label>
-                            <input type="radio" name="highest_education_level" value="High School"> High School
-                        </label>
+                    <div class="items2">
+                        <div class="input-box">
+                            <label>Highest education level: </label>
 
-                        <label>
-                            <input type="radio" name="highest_education_level" value="Associate Degree"> Associate
-                            Degree
-                        </label>
+            
+                                <div class="radio-pill">
+                                    <input type="radio" name="highest_education_level" value="High School"
+                                        id="High School">
+                                    <label for="High School">High School</label>
+                                </div>
 
-                        <label>
-                            <input type="radio" name="highest_education_level" value="Bachelor's Degree"> Bachelor's
-                            Degree
-                        </label>
+                                <div class="radio-pill">
+                                    <input type="radio" name="highest_education_level" value="Associate Degree"
+                                        id="Associate Degree">
+                                    <label for="Associate Degree">Associate Degree</label>
+                                </div>
 
-                        <label>
-                            <input type="radio" name="highest_education_level" value="Master's Degree"> Master's Degree
-                        </label>
+                                <div class="radio-pill">
+                                    <input type="radio" name="highest_education_level" value="Bachelor's Degree"
+                                        id="Bachelor's Degree">
+                                    <label for="Bachelor's Degree">Bachelor's Degree</label>
+                                </div>
 
-                        <label>
-                            <input type="radio" name="highest_education_level" value="PhD"> PhD
-                        </label>
+                                <div class="radio-pill">
+                                    <input type="radio" name="highest_education_level" value="Master's Degree"
+                                        id="Master's Degree">
+                                    <label for="Master's Degree">Master's Degree</label>
+                                </div>
 
-                        <label>
-                            <input type="radio" name="highest_education_level" value="Other"> Other
-                        </label>
+                                <div class="radio-pill">
+                                    <input type="radio" name="highest_education_level" value="PhD" id="PhD">
+                                    <label for="PhD">PhD</label>
+                                </div>
 
-                        <label>Technical Skills: </label>
+                                <div class="radio-pill">
+                                    <input type="radio" name="highest_education_level" value="Other" id="other">
+                                    <label for="Other">Other </label>
+                                </div>
 
-                        <label>
-                            <input type="checkbox" name="skills" value="HTML/CSS"> HTML/CSS
-                        </label>
-
-                        <label>
-                            <input type="checkbox" name="skills" value="Javascript"> Javascript
-                        </label>
-
-                        <label>
-                            <input type="checkbox" name="skills" value="Python"> Python
-                        </label>
-
-                        <label>
-                            <input type="checkbox" name="skills" value="Java"> Java
-                        </label>
-
-                        <label>
-                            <input type="checkbox" name="skills" value="React"> React
-                        </label>
-
-                        <label>
-                            <input type="checkbox" name="skills" value="Node.js"> Node.js
-                        </label>
-
-                        <label>
-                            <input type="checkbox" name="skills" value="SQL"> SQL
-                        </label>
-
-                        <label>
-                            <input type="checkbox" name="skills" value="Git/Github"> Git/Github
-                        </label>
-
-
-                        <label>
-                            Years of experience in field: <input type="number" id="years-of-experience"
-                                name="years-of-experience" min="0" max="50">
-                        </label>
-
-
-                        <label>
-                            Previous salary: <input type="number" id="previous-salary" name="previous-salary"> (in
-                            dollars)
-                        </label>
-                        <div class="section-nav-btns">
-                            <button type="button" class="btn-back" onclick="goToSection('section-3',3)"><i class="bi bi-arrow-left"></i> Back</button>
-                            <button type="button" class="btn-next" onclick="goToSection('section-5',5)">Next<i class="bi bi-arrow-right"></i></button>
                         </div>
-                    </fieldset>
+                        <div class="input-box">
+                            <label>Technical Skills: </label>
+                            <div class="radio-pill-group ">
+                                <label>
+                                    <input type="checkbox" name="skills" value="HTML/CSS"> HTML/CSS
+                                </label>
+            
+                                <label>
+                                    <input type="checkbox" name="skills" value="Javascript"> Javascript
+                                </label>
+            
+                                <label>
+                                    <input type="checkbox" name="skills" value="Python"> Python
+                                </label>
+            
+                                <label>
+                                    <input type="checkbox" name="skills" value="Java"> Java
+                                </label>
+            
+                                <label>
+                                    <input type="checkbox" name="skills" value="React"> React
+                                </label>
+            
+                                <label>
+                                    <input type="checkbox" name="skills" value="Node.js"> Node.js
+                                </label>
+            
+                                <label>
+                                    <input type="checkbox" name="skills" value="SQL"> SQL
+                                </label>
+            
+                                <label>
+                                    <input type="checkbox" name="skills" value="Git/Github"> Git/Github
+                                </label>
+                            </div>
+                    </div>
+
+
+                    </div>
+
+
+                    <label>
+                        Years of experience in field: <input type="number" id="years-of-experience"
+                            name="years-of-experience" min="0" max="50">
+                    </label>
+
+
+                    <label>
+                        Previous salary: <input type="number" id="previous-salary" name="previous-salary"> (in
+                        dollars)
+                    </label>
+                    <div class="section-nav-btns">
+                        <button type="button" class="btn-back" onclick="goToSection('section-3',3)"><i
+                                class="bi bi-arrow-left"></i> Back</button>
+                        <button type="button" class="btn-next" onclick="goToSection('section-5',5)">Next<i
+                                class="bi bi-arrow-right"></i></button>
+                    </div>
+                </fieldset>
 
                 <!-- Section 5: Availability & Preferences -->
-                
-                    <fieldset id="section-5" class="form-section hidden">
-                        <legend class="section-legend">
-                            <i class="bi bi-clock-fill"></i> Availability & Preferences
-                        </legend>
-                        <label>Earliest start date: </label>
-                        <input type="date" id="earliest-start-date" name="earliest-start-date">
 
-                        <label>Work preference: </label>
+                <fieldset id="section-5" class="form-section hidden">
+                    <legend class="section-legend">
+                        <i class="bi bi-clock-fill"></i> Availability & Preferences
+                    </legend>
+                    <label>Earliest start date: </label>
+                    <input type="date" id="earliest-start-date" name="earliest-start-date">
 
-                        <label><input type="radio" name="wp" value="Full-time"> Full-time</label>
+                    <label>Work preference: </label>
 
-                        <label><input type="radio" name="wp" value="part-time"> part-time</label>
+                    <label><input type="radio" name="wp" value="Full-time"> Full-time</label>
 
-                        <label><input type="radio" name="wp" value="Contract"> Contract</label>
+                    <label><input type="radio" name="wp" value="part-time"> part-time</label>
 
-                        <label><input type="radio" name="wp" value="Internship"> Internship</label>
+                    <label><input type="radio" name="wp" value="Contract"> Contract</label>
 
-
-                        <label>Remote work preference: </label>
-
-                        <label><input type="radio" name="rmp" value="Fully remote"> Fully remote</label>
-
-                        <label><input type="radio" name="rmp" value="Hybrid"> Hybrid (2-3 days in office)</label>
-
-                        <label><input type="radio" name="rmp" value="Fully in-office"> Fully in-office</label>
-
-                        <label><input type="radio" name="rmp" value="No preference"> No preference</label>
+                    <label><input type="radio" name="wp" value="Internship"> Internship</label>
 
 
+                    <label>Remote work preference: </label>
 
-                        <label>Willing to Relocate? </label>
+                    <label><input type="radio" name="rmp" value="Fully remote"> Fully remote</label>
 
-                        <label><input type="radio" name="wtr" value="yes"> Yes</label>
+                    <label><input type="radio" name="rmp" value="Hybrid"> Hybrid (2-3 days in office)</label>
 
-                        <label><input type="radio" name="wtr" value="no"> No</label>
+                    <label><input type="radio" name="rmp" value="Fully in-office"> Fully in-office</label>
 
-                        <label><input type="radio" name="wtr" value="maybe"> Maybe</label>
+                    <label><input type="radio" name="rmp" value="No preference"> No preference</label>
 
 
 
-                        <label for="expected-salary"> Expected salary range: </label>
-                            <select id="expected-salary" name="expected-salary">
-                                <option value="30k-40k"> $30,000 - $40,000</option>
-                                <option value="40k-55k"> $40,000 - $55,000</option>
-                                <option value="55k-70k"> $55,000 - $70,000</option>
-                                <option value="70k-85k"> $70,000 - $85,000</option>
-                                <option value="85k-100k"> $85,000 - $100,000</option>
-                                <option value="100+k"> $100,000+</option>
-                                <option value="prefer-to-discuss"> Prefer to discuss</option>
-                            </select>
-                        <div class="section-nav-btns">
-                            <button type="button" class="btn-back" onclick="goToSection('section-4',4)"><i class="bi bi-arrow-left"></i> Back</button>
-                            <button type="button" class="btn-next" onclick="goToSection('section-6',6)">Next<i class="bi bi-arrow-right"></i></button>
-                        </div>
-                    </fieldset>
+                    <label>Willing to Relocate? </label>
+
+                    <label><input type="radio" name="wtr" value="yes"> Yes</label>
+
+                    <label><input type="radio" name="wtr" value="no"> No</label>
+
+                    <label><input type="radio" name="wtr" value="maybe"> Maybe</label>
+
+
+
+                    <label for="expected-salary"> Expected salary range: </label>
+                    <select id="expected-salary" name="expected-salary">
+                        <option value="30k-40k"> $30,000 - $40,000</option>
+                        <option value="40k-55k"> $40,000 - $55,000</option>
+                        <option value="55k-70k"> $55,000 - $70,000</option>
+                        <option value="70k-85k"> $70,000 - $85,000</option>
+                        <option value="85k-100k"> $85,000 - $100,000</option>
+                        <option value="100+k"> $100,000+</option>
+                        <option value="prefer-to-discuss"> Prefer to discuss</option>
+                    </select>
+                    <div class="section-nav-btns">
+                        <button type="button" class="btn-back" onclick="goToSection('section-4',4)"><i
+                                class="bi bi-arrow-left"></i> Back</button>
+                        <button type="button" class="btn-next" onclick="goToSection('section-6',6)">Next<i
+                                class="bi bi-arrow-right"></i></button>
+                    </div>
+                </fieldset>
 
                 <!-- Section 6: Application Materials -->
-                
-                    <fieldset id="section-6" class="form-section hidden">
-                        <legend class="section-legend">
-                            <i class="bi bi-file-earmark-fill"></i> Application Materials
-                        </legend>
-                        <label for="cover-letter">Cover letter:<span class="req-star"> *</span> </label>
-                            <textarea name="cover-letter" rows="5" id="cover-letter"
-                                placeholder="Tell us why you're interested in working at TechStart and what makes you a great fit for this role..."
-                                required></textarea>
 
-                        <label for="how-did-you-hear">How did you hear about us?</label>
-                            <select id="how-did-you-hear" name="how-did-you-hear">
-                                <option value="Company website"> Company website </option>
-                                <option value="Job board"> Job board(Indeed, LinkedIn, etc.) </option>
-                                <option value="Social media"> Social media </option>
-                                <option value="Friend/colleague referral"> Friend/colleague referral </option>
-                                <option value="Recruiter"> Recruiter </option>
-                                <option value="Career fair"> Career fair </option>
-                                <option value="Other"> Other </option>
-                            </select>
-                        
+                <fieldset id="section-6" class="form-section hidden">
+                    <legend class="section-legend">
+                        <i class="bi bi-file-earmark-fill"></i> Application Materials
+                    </legend>
+                    <label for="cover-letter">Cover letter:<span class="req-star"> *</span> </label>
+                    <textarea name="cover-letter" rows="5" id="cover-letter"
+                        placeholder="Tell us why you're interested in working at TechStart and what makes you a great fit for this role..."
+                        required></textarea>
 
-                        <label for="additional-comments">Additional comments:</label>
+                    <label for="how-did-you-hear">How did you hear about us?</label>
+                    <select id="how-did-you-hear" name="how-did-you-hear">
+                        <option value="Company website"> Company website </option>
+                        <option value="Job board"> Job board(Indeed, LinkedIn, etc.) </option>
+                        <option value="Social media"> Social media </option>
+                        <option value="Friend/colleague referral"> Friend/colleague referral </option>
+                        <option value="Recruiter"> Recruiter </option>
+                        <option value="Career fair"> Career fair </option>
+                        <option value="Other"> Other </option>
+                    </select>
 
-                            <textarea id="additional-comments" name="additional-comments" rows="3"
-                                placeholder="Any additional information you'd like to share..."></textarea>
 
-                        <div class="section-nav-btns">
-                            <button type="button" class="btn-back" onclick="goToSection('section-5',5)"><i class="bi bi-arrow-left"></i> Back</button>
-                            <button type="button" class="btn-next" onclick="goToSection('section-7',7)">Review & Submit<i class="bi bi-arrow-right"></i></button>
-                        </div>
-                    </fieldset>
+                    <label for="additional-comments">Additional comments:</label>
+
+                    <textarea id="additional-comments" name="additional-comments" rows="3"
+                        placeholder="Any additional information you'd like to share..."></textarea>
+
+                    <div class="section-nav-btns">
+                        <button type="button" class="btn-back" onclick="goToSection('section-5',5)"><i
+                                class="bi bi-arrow-left"></i> Back</button>
+                        <button type="button" class="btn-next" onclick="goToSection('section-7',7)">Review & Submit<i
+                                class="bi bi-arrow-right"></i></button>
+                    </div>
+                </fieldset>
 
                 <!-- Submission Section -->
                 <fieldset id="section-7" class="form-section hidden">
@@ -507,15 +536,17 @@
                         <h3>Almost there!</h3>
                         <p>Review your application carefully before submitting</p>
                     </div>
-                
+
                     <label class="terms-label">
                         <input type="checkbox" name="Terms and Conditions" id="Terms-and-Conditions" required>
                         <span>I agree to the <a href="#">Terms and Conditions</a><span class="req-star"> *</span></span>
                     </label>
-                    
+
                     <div class="section-nav-btns">
-                        <button type="button" class="btn-back" onclick="goToSection('section-6',6)"><i class="bi bi-arrow-left"></i> Back</button>
-                        <button type="reset" class="btn-reset"><i class="bi bi-arrow-counterclockwise"></i> Clear Form</button>
+                        <button type="button" class="btn-back" onclick="goToSection('section-6',6)"><i
+                                class="bi bi-arrow-left"></i> Back</button>
+                        <button type="reset" class="btn-reset"><i class="bi bi-arrow-counterclockwise"></i> Clear
+                            Form</button>
                         <button type="submit" class="btn-submit"><i class="bi bi-check-lg"></i> Submit</button>
                     </div>
                 </fieldset>
