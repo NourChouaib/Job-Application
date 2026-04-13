@@ -345,3 +345,79 @@ select option{
     color: var(--text-primary);
     background: var(--surface-2);
 }
+
+.radio-pill-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.radio-pill-group.vertical {
+    flex-direction: column;
+}
+
+.radio-pill{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 0;
+    cursor: pointer;
+}
+
+.radio-pill input[type="radio"] {
+    display: none;
+}
+.radio-pill label {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: var(--transition);
+    white-space: nowrap;
+    user-select: none;
+}
+.radio-pill input[type="radio"]:checked + span {
+    background: var(--accent-glow);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+.radio-pill label:hover {
+    border-color: rgba(79,138,255,0.4);
+    color: var(--text-primary);
+}
+
+.radio-pill input[type="radio"]:checked + label {
+    background: var(--accent-glow);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.btn-next, .btn-back, .btn-reset, .btn-submit {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.4rem;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+}
+
+.btn-next {
+    background: var(--accent);
+    color: #fff;
+    float: right;
+    box-shadow: 0 4px 20px rgba(79, 138, 255, 0.3);
+}
+
+.btn-back {
+    background: var(--border);
+    color: var(--text-secondary);
+}
