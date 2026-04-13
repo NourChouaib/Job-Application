@@ -295,8 +295,10 @@ fieldset legend {
 
 .items1 {
     display: inline-flex;
+    flex-direction: column;
     width: 100%;
     flex:1;
+    margin: 2rem;
 }
 
 .items2 {
@@ -380,7 +382,7 @@ select option{
     white-space: nowrap;
     user-select: none;
 }
-.radio-pill input[type="radio"]:checked + span {
+.radio-pill input[type="radio"]:checked + label {
     background: var(--accent-glow);
     border-color: var(--accent);
     color: var(--accent);
@@ -390,11 +392,6 @@ select option{
     color: var(--text-primary);
 }
 
-.radio-pill input[type="radio"]:checked + label {
-    background: var(--accent-glow);
-    border-color: var(--accent);
-    color: var(--accent);
-}
 
 .section-nav-btns {
     display: flex;
@@ -431,3 +428,4 @@ select option{
     color: var(--text-secondary);
     border: 1px solid var(--border);
 }
+

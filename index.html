@@ -195,7 +195,7 @@
                             </div>
                         </div>
 
-                        <div class="items1">
+                        <div class="items2">
                             <div class="input-box">
                                 <label for="country"> Country: </label>
                                 <select id="country" name="country">
@@ -226,65 +226,90 @@
                             <i class="bi bi-briefcase-fill"></i> Position & Experience
                         </legend>
 
-                        <label for="position">Position applying for:</label>
-                        <select id="position" name="position">
-                            <option value="software_developer">Software Developer</option>
-                            <option value="web_developer">Web Developer</option>
-                            <option value="data_analyst">Data Analyst</option>
-                            <option value="ux_ui_designer">UX/UI Designer</option>
-                            <option value="project_manager">Project Manager</option>
-                            <option value="marketing_specialist">Marketing Specialist</option>
-                            <option value="other">Other</option>
-                        </select>
+                        <div class="items2">
+                            <div class="input-box">
+                                <label for="position">Position applying for:</label>
+                                <select id="position" name="position">
+                                    <option value="software_developer">Software Developer</option>
+                                    <option value="web_developer">Web Developer</option>
+                                    <option value="data_analyst">Data Analyst</option>
+                                    <option value="ux_ui_designer">UX/UI Designer</option>
+                                    <option value="project_manager">Project Manager</option>
+                                    <option value="marketing_specialist">Marketing Specialist</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="input-box">
+                                <label for="employment">Current employment status:</label>
+                                <select id="employment" name="employment">
+                                    <option value="employed">Employed</option>
+                                    <option value="unemployed">Unemployed</option>
+                                    <option value="student">Student</option>
+                                    <option value="freelancer">Freelancer</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
 
-                        <p>Department preference:</p>
+                        <div class="items2">
+                            <div class="input-box">
+                                <label>Department preference:</label>
+        
+                                <div class="radio-pill-group">
+                                    <div class="radio-pill">
+                                            <input type="radio" name="department" value="engineering" id="engineering"> 
+                                            <label for="engineering">Engineering</label>
+                                    </div>
+            
+                                    <div class="radio-pill">
+                                    
+                                            <input type="radio" name="department" value="design" id="design"> 
+                                            <label for="design">Design</label> 
+                                    </div>
+            
+                                    <div class="radio-pill">
+                                            <input type="radio" name="department" value="marketing" id="marketing">
+                                            <label for="marketing">Marketing</label>  
+                                    </div>
+            
+                                    <div class="radio-pill">
+                                            <input type="radio" name="department" value="sales" id="sales">
+                                            <label for="sales">Sales</label>  
+                                    </div>
+            
+                                    <div class="radio-pill">
+                                            <input type="radio" name="department" value="operations" id="operations">
+                                            <label for="operations">Operations</label> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                        <label>
-                            <input type="radio" name="department" value="engineering"> Engineering
-                        </label>
+                        <div class="items2">
+                            <div class="input-box">
+                                <label>Experience level:</label>
+                                <div class="radio-pill-group">
+                                    <div class="radio-pill">
+                                        <input type="radio" name="experience" value="entry" id="entry"> 
+                                        <label for="entry">Entry Level (0-2 years)</label>
+                                    </div>
+                                    <div class="radio-pill">
+                                        <input type="radio" name="experience" value="mid" id="mid"> 
+                                        <label for="mid">Mid Level (3-5 years)</label>
+                                    </div>
+                                    <div class="radio-pill">
+                                        <input type="radio" name="experience" value="senior" id="senior"> 
+                                        <label for="senior">Senior Level (6-10 years)</label>
+                                    </div>
+                                    <div class="radio-pill">
+                                        <input type="radio" name="experience" value="lead" id="lead"> 
+                                        <label for="lead">Lead/Manager (10+ years)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                        <label>
-                            <input type="radio" name="department" value="design"> Design
-                        </label>
-
-                        <label>
-                            <input type="radio" name="department" value="marketing"> Marketing
-                        </label>
-
-                        <label>
-                            <input type="radio" name="department" value="sales"> Sales
-                        </label>
-
-                        <label>
-                            <input type="radio" name="department" value="operations"> Operations
-                        </label>
-
-                        <p>Experience level:</p>
-
-                        <label>
-                            <input type="radio" name="experience" value="entry"> Entry Level (0-2 years)
-                        </label>
-
-                        <label>
-                            <input type="radio" name="experience" value="mid"> Mid Level (3-5 years)
-                        </label>
-
-                        <label>
-                            <input type="radio" name="experience" value="senior"> Senior Level (6-10 years)
-                        </label>
-
-                        <label>
-                            <input type="radio" name="experience" value="lead"> Lead/Manager (10+ years)
-                        </label>
-
-                        <label for="employment">Current employment status:</label>
-                        <select id="employment" name="employment">
-                            <option value="employed">Employed</option>
-                            <option value="unemployed">Unemployed</option>
-                            <option value="student">Student</option>
-                            <option value="freelancer">Freelancer</option>
-                            <option value="other">Other</option>
-                        </select>
+                        
 
                         <div class="section-nav-btns">
                             <button type="button" class="btn-back" onclick="goToSection('section-2',2)"><i class="bi bi-arrow-left"></i> Back</button>
