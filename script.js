@@ -17,11 +17,12 @@ function showSection(id, stepNum) {
         }
     }
     currentButton.classList.add("active")
-}
-
-function goToSection(section, num) {
-    showSection(section, this)
-    const width = num / 7 * 100
+    const width = stepNum / 7 * 100
     const progressBar = document.getElementById("progress-bar")
     progressBar.setAttribute('style', `width:${width}%`)
+}
+
+function goToSection(section,num) {
+    showSection(section, num)
+    
 }

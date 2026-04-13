@@ -293,6 +293,12 @@ fieldset legend {
     margin-bottom: 2rem;
 }
 
+.items1 {
+    display: inline-flex;
+    width: 100%;
+    flex:1;
+}
+
 .items2 {
     display: inline-flex;
     width: 100%;
@@ -305,18 +311,37 @@ fieldset legend {
     flex-direction: column;
     flex:1;
     margin: 0 2rem 2rem;
+    
 }
 
 .input-box label{
     color: var(--text-muted);
     font-size: 0.8rem;
     margin-bottom: 0.7rem;
+    font-size: 1rem;
+    color: var(--text-secondary);
 }
 
 .input-box input{
-    max-width: 350px;
-    height: 35px;
+    max-width: 1000px;
+    height: 40px;
     border-radius: var(--radius-sm);
     background: var(--border);
     border: 0.1rem solid var(--border);
+    color: white;
+    padding: .7rem 1rem;
+}
+
+.input-box select{
+    max-width: 1000px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    background: var(--border);
+    border: 0.1rem solid var(--border);
+    color: white;
+    padding: .7rem 1rem;
+}
+select option{
+    color: var(--text-primary);
+    background: var(--surface-2);
 }
