@@ -429,3 +429,90 @@ select option{
     border: 1px solid var(--border);
 }
 
+.checkbox-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.checkbox-chip {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    cursor: pointer;
+}
+.checkbox-chip input[type="checkbox"] {
+    display: none;
+}
+.checkbox-chip label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.85rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: var(--transition);
+    user-select: none;
+}
+.checkbox-chip input[type="checkbox"]:checked + label {
+    background: rgba(167,139,250,0.12);
+    border-color: var(--accent-2);
+    color: var(--accent-2);
+}
+.checkbox-chip label:hover {
+    border-color: rgba(167,139,250,0.4);
+    color: var(--text-primary);
+}
+.checkbox-chip input[type="checkbox"]:checked + label::before {
+    content: '✓ ';
+    font-weight: 700;
+}
+
+textarea {
+    width: 100%;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    padding: 0.7rem 1rem;
+    outline: none;
+    transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.submit-card{
+    background: linear-gradient(135deg, rgba(79, 138, 255, 0.07), rgba(167, 139, 250, 0.07));
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    border: 1px solid rgba(79, 138, 255, 0.18);
+}
+
+.submit-icon-wrap{
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 0 auto 1.25rem;
+    box-shadow: 0 8px 30px rgba(79, 138, 255, 0.35);
+}
+
+.submit-card p{
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    max-width: 380px;
+    margin: 0 auto;
+}

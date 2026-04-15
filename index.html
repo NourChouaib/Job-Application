@@ -370,41 +370,48 @@
                         </div>
                         <div class="input-box">
                             <label>Technical Skills: </label>
-                            <div class="radio-pill-group ">
-                                <label>
-                                    <input type="checkbox" name="skills" value="HTML/CSS"> HTML/CSS
-                                </label>
+                            <div class="checkbox-grid">
+                                <div class="checkbox-chip">
+                                    <input type="checkbox" name="skills" value="HTML/CSS" id="skill-html">
+                                    <label for="skill-html">HTML/CSS</label>
+                                </div>
 
-                                <label>
-                                    <input type="checkbox" name="skills" value="Javascript"> Javascript
-                                </label>
+                                <div class="checkbox-chip">
+                                    <input type="checkbox" name="skills" value="Javascript" id="skill-js">
+                                    <label for="skill-js">Javascript</label>
+                                </div>
 
-                                <label>
-                                    <input type="checkbox" name="skills" value="Python"> Python
-                                </label>
+                                <div class="checkbox-chip">
+                                    <input type="checkbox" name="skills" value="Python" id="skill-python">
+                                    <label for="skill-python">Python</label>
+                                </div>
 
-                                <label>
-                                    <input type="checkbox" name="skills" value="Java"> Java
-                                </label>
+                                <div class="checkbox-chip">
+                                    <input type="checkbox" name="skills" value="Java" id="skill-java">
+                                    <label for="skill-java">Java</label>
+                                </div>
 
-                                <label>
-                                    <input type="checkbox" name="skills" value="React"> React
-                                </label>
+                                <div class="checkbox-chip">
+                                    <input type="checkbox" name="skills" value="React" id="skill-react">
+                                    <label for="skill-react">React</label>
+                                </div>
 
-                                <label>
-                                    <input type="checkbox" name="skills" value="Node.js"> Node.js
-                                </label>
+                                <div class="checkbox-chip">
+                                    <input type="checkbox" name="skills" value="Node.js" id="skill-nodejs">
+                                    <label for="skill-nodejs">Node.js</label>
+                                </div>
 
-                                <label>
-                                    <input type="checkbox" name="skills" value="SQL"> SQL
-                                </label>
+                                <div class="checkbox-chip">
+                                    <input type="checkbox" name="skills" value="SQL" id="skill-sql">
+                                    <label for="skill-sql">SQL</label>
+                                </div>
 
-                                <label>
-                                    <input type="checkbox" name="skills" value="Git/Github"> Git/Github
-                                </label>
+                                <div class="checkbox-chip">
+                                    <input type="checkbox" name="skills" value="Git/Github" id="skill-git">
+                                    <label for="skill-git">Git/Github</label>
+                                </div>
                             </div>
                         </div>
-
 
                     </div>
 
@@ -542,27 +549,39 @@
                     <legend class="section-legend">
                         <i class="bi bi-file-earmark-fill"></i> Application Materials
                     </legend>
-                    <label for="cover-letter">Cover letter:<span class="req-star"> *</span> </label>
-                    <textarea name="cover-letter" rows="5" id="cover-letter"
-                        placeholder="Tell us why you're interested in working at TechStart and what makes you a great fit for this role..."
-                        required></textarea>
 
-                    <label for="how-did-you-hear">How did you hear about us?</label>
-                    <select id="how-did-you-hear" name="how-did-you-hear">
-                        <option value="Company website"> Company website </option>
-                        <option value="Job board"> Job board(Indeed, LinkedIn, etc.) </option>
-                        <option value="Social media"> Social media </option>
-                        <option value="Friend/colleague referral"> Friend/colleague referral </option>
-                        <option value="Recruiter"> Recruiter </option>
-                        <option value="Career fair"> Career fair </option>
-                        <option value="Other"> Other </option>
-                    </select>
+                    <div class="items2">
+                        <div class="input-box">
+                            <label for="cover-letter">Cover letter:<span class="req-star"> *</span> </label>
+                            <textarea name="cover-letter" rows="5" id="cover-letter"
+                                placeholder="Tell us why you're interested in working at TechStart and what makes you a great fit for this role..."
+                                required></textarea>
+                        </div>
+                    </div>
 
+                    <div class="items2">
+                        <div class="input-box">
+                            <label for="how-did-you-hear">How did you hear about us?</label>
+                            <select id="how-did-you-hear" name="how-did-you-hear">
+                                <option value="Company website"> Company website </option>
+                                <option value="Job board"> Job board(Indeed, LinkedIn, etc.) </option>
+                                <option value="Social media"> Social media </option>
+                                <option value="Friend/colleague referral"> Friend/colleague referral </option>
+                                <option value="Recruiter"> Recruiter </option>
+                                <option value="Career fair"> Career fair </option>
+                                <option value="Other"> Other </option>
+                            </select>
+                        </div>
+                    </div>
 
-                    <label for="additional-comments">Additional comments:</label>
-
-                    <textarea id="additional-comments" name="additional-comments" rows="3"
-                        placeholder="Any additional information you'd like to share..."></textarea>
+                    <div class="items2">
+                        <div class="input-box">
+                            <label for="additional-comments">Additional comments:</label>
+        
+                            <textarea id="additional-comments" name="additional-comments" rows="3"
+                                placeholder="Any additional information you'd like to share..."></textarea>
+                        </div>
+                    </div>
 
                     <div class="section-nav-btns">
                         <button type="button" class="btn-back" onclick="goToSection('section-5',5)"><i

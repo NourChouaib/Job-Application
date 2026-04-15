@@ -1,6 +1,7 @@
 const fields = Array.from(document.getElementsByClassName("form-section"))
 const btns = Array.from(document.getElementsByClassName("step-btn"))
 
+
 function showSection(id, stepNum) {
     for (const field of fields) {
         field.classList.add("hidden")
