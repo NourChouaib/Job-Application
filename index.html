@@ -333,40 +333,39 @@
                         <div class="input-box">
                             <label>Highest education level: </label>
 
-            
-                                <div class="radio-pill">
-                                    <input type="radio" name="highest_education_level" value="High School"
-                                        id="High School">
-                                    <label for="High School">High School</label>
-                                </div>
 
-                                <div class="radio-pill">
-                                    <input type="radio" name="highest_education_level" value="Associate Degree"
-                                        id="Associate Degree">
-                                    <label for="Associate Degree">Associate Degree</label>
-                                </div>
+                            <div class="radio-pill">
+                                <input type="radio" name="highest_education_level" value="High School" id="High School">
+                                <label for="High School">High School</label>
+                            </div>
 
-                                <div class="radio-pill">
-                                    <input type="radio" name="highest_education_level" value="Bachelor's Degree"
-                                        id="Bachelor's Degree">
-                                    <label for="Bachelor's Degree">Bachelor's Degree</label>
-                                </div>
+                            <div class="radio-pill">
+                                <input type="radio" name="highest_education_level" value="Associate Degree"
+                                    id="Associate Degree">
+                                <label for="Associate Degree">Associate Degree</label>
+                            </div>
 
-                                <div class="radio-pill">
-                                    <input type="radio" name="highest_education_level" value="Master's Degree"
-                                        id="Master's Degree">
-                                    <label for="Master's Degree">Master's Degree</label>
-                                </div>
+                            <div class="radio-pill">
+                                <input type="radio" name="highest_education_level" value="Bachelor's Degree"
+                                    id="Bachelor's Degree">
+                                <label for="Bachelor's Degree">Bachelor's Degree</label>
+                            </div>
 
-                                <div class="radio-pill">
-                                    <input type="radio" name="highest_education_level" value="PhD" id="PhD">
-                                    <label for="PhD">PhD</label>
-                                </div>
+                            <div class="radio-pill">
+                                <input type="radio" name="highest_education_level" value="Master's Degree"
+                                    id="Master's Degree">
+                                <label for="Master's Degree">Master's Degree</label>
+                            </div>
 
-                                <div class="radio-pill">
-                                    <input type="radio" name="highest_education_level" value="Other" id="other">
-                                    <label for="Other">Other </label>
-                                </div>
+                            <div class="radio-pill">
+                                <input type="radio" name="highest_education_level" value="PhD" id="PhD">
+                                <label for="PhD">PhD</label>
+                            </div>
+
+                            <div class="radio-pill">
+                                <input type="radio" name="highest_education_level" value="Other" id="other">
+                                <label for="Other">Other </label>
+                            </div>
 
                         </div>
                         <div class="input-box">
@@ -375,51 +374,56 @@
                                 <label>
                                     <input type="checkbox" name="skills" value="HTML/CSS"> HTML/CSS
                                 </label>
-            
+
                                 <label>
                                     <input type="checkbox" name="skills" value="Javascript"> Javascript
                                 </label>
-            
+
                                 <label>
                                     <input type="checkbox" name="skills" value="Python"> Python
                                 </label>
-            
+
                                 <label>
                                     <input type="checkbox" name="skills" value="Java"> Java
                                 </label>
-            
+
                                 <label>
                                     <input type="checkbox" name="skills" value="React"> React
                                 </label>
-            
+
                                 <label>
                                     <input type="checkbox" name="skills" value="Node.js"> Node.js
                                 </label>
-            
+
                                 <label>
                                     <input type="checkbox" name="skills" value="SQL"> SQL
                                 </label>
-            
+
                                 <label>
                                     <input type="checkbox" name="skills" value="Git/Github"> Git/Github
                                 </label>
                             </div>
-                    </div>
+                        </div>
 
 
                     </div>
 
+                    <div class="items2">
 
-                    <label>
-                        Years of experience in field: <input type="number" id="years-of-experience"
-                            name="years-of-experience" min="0" max="50">
-                    </label>
+                        <div class="input-box">
+                            <label> Years of experience in field: </label>
+                            <input type="number" id="years-of-experience" name="years-of-experience" min="0" max="50">
+                        </div>
 
 
-                    <label>
-                        Previous salary: <input type="number" id="previous-salary" name="previous-salary"> (in
-                        dollars)
-                    </label>
+                        <div class="input-box">
+
+                            <label>Previous salary: </label>
+                            <input type="number" id="previous-salary" name="previous-salary"> <label>(in
+                                dollars)</label>
+                        </div>
+                    </div>
+
                     <div class="section-nav-btns">
                         <button type="button" class="btn-back" onclick="goToSection('section-3',3)"><i
                                 class="bi bi-arrow-left"></i> Back</button>
@@ -434,55 +438,99 @@
                     <legend class="section-legend">
                         <i class="bi bi-clock-fill"></i> Availability & Preferences
                     </legend>
-                    <label>Earliest start date: </label>
-                    <input type="date" id="earliest-start-date" name="earliest-start-date">
 
-                    <label>Work preference: </label>
+                    <div class="items2">
+                        <div class="input-box">
+                            <label for="earliest-start-date">Earliest start date: </label>
+                            <input type="date" id="earliest-start-date" name="earliest-start-date">
+                        </div>
 
-                    <label><input type="radio" name="wp" value="Full-time"> Full-time</label>
+                        <div class="input-box">
+                            <label>Expected salary range: </label>
+                            <select id="expected-salary" name="expected-salary">
+                                <option value="30k-40k"> $30,000 - $40,000</option>
+                                <option value="40k-55k"> $40,000 - $55,000</option>
+                                <option value="55k-70k"> $55,000 - $70,000</option>
+                                <option value="70k-85k"> $70,000 - $85,000</option>
+                                <option value="85k-100k"> $85,000 - $100,000</option>
+                                <option value="100+k"> $100,000+</option>
+                                <option value="prefer-to-discuss"> Prefer to discuss</option>
+                            </select>
+                        </div>
+                    </div>
 
-                    <label><input type="radio" name="wp" value="part-time"> part-time</label>
+                    <div class="items2">
+                        <div class="input-box">
+                            <label>Work preference: </label>
+                            <div class="radio-pill-group">
+                                <div class="radio-pill">
+                                    <input type="radio" name="wp" value="Full-time" id="Full-time">
+                                    <label for="Full-time">Full-time</label>
+                                </div>
+                                <div class="radio-pill">
+                                    <input type="radio" name="wp" value="part-time" id="part-time">
+                                    <label for="part-time">Part-time</label>
+                                </div>
+                                <div class="radio-pill">
+                                    <input type="radio" name="wp" value="Contract" id="Contract">
+                                    <label for="Contract">Contract</label>
+                                </div>
+                                <div class="radio-pill">
+                                    <input type="radio" name="wp" value="Internship" id="Internship">
+                                    <label for="Internship">Internship</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <label><input type="radio" name="wp" value="Contract"> Contract</label>
+                    <div class="items2">
+                        <div class="input-box">
+                            <label>Remote work preference: </label>
+                            <div class="radio-pill-group">
+                                <div class="radio-pill">
+                                    <input type="radio" name="rmp" value="Fully remote" id="fully-remote">
+                                    <label for="fully-remote">Fully remote</label>
+                                </div>
+                                <div class="radio-pill">
+                                    <input type="radio" name="rmp" value="Hybrid" id="hybrid">
+                                    <label for="hybrid">Hybrid (2-3 days in office)</label>
+                                </div>
+                                <div class="radio-pill">
+                                    <input type="radio" name="rmp" value="Fully in-office" id="fully-in-office">
+                                    <label for="fully-in-office">Fully in-office</label>
+                                </div>
+                                <div class="radio-pill">
+                                    <input type="radio" name="rmp" value="No preference" id="no-preference">
+                                    <label for="no-preference">No preference</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <label><input type="radio" name="wp" value="Internship"> Internship</label>
+                    <div class="items2">
+                        <div class="input-box">
+                            <label>Willing to Relocate? </label>
+                            <div class="radio-pill-group">
+                                <div class="radio-pill">
+                                    <input type="radio" name="wtr" value="yes" id="relocate-yes">
+                                    <label for="relocate-yes">Yes</label>
+                                </div>
+                                <div class="radio-pill">
+                                    <input type="radio" name="wtr" value="no" id="relocate-no">
+                                    <label for="relocate-no">No</label>
+                                </div>
+                                <div class="radio-pill">
+                                    <input type="radio" name="wtr" value="maybe" id="relocate-maybe">
+                                    <label for="relocate-maybe">Maybe</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-
-                    <label>Remote work preference: </label>
-
-                    <label><input type="radio" name="rmp" value="Fully remote"> Fully remote</label>
-
-                    <label><input type="radio" name="rmp" value="Hybrid"> Hybrid (2-3 days in office)</label>
-
-                    <label><input type="radio" name="rmp" value="Fully in-office"> Fully in-office</label>
-
-                    <label><input type="radio" name="rmp" value="No preference"> No preference</label>
-
-
-
-                    <label>Willing to Relocate? </label>
-
-                    <label><input type="radio" name="wtr" value="yes"> Yes</label>
-
-                    <label><input type="radio" name="wtr" value="no"> No</label>
-
-                    <label><input type="radio" name="wtr" value="maybe"> Maybe</label>
-
-
-
-                    <label for="expected-salary"> Expected salary range: </label>
-                    <select id="expected-salary" name="expected-salary">
-                        <option value="30k-40k"> $30,000 - $40,000</option>
-                        <option value="40k-55k"> $40,000 - $55,000</option>
-                        <option value="55k-70k"> $55,000 - $70,000</option>
-                        <option value="70k-85k"> $70,000 - $85,000</option>
-                        <option value="85k-100k"> $85,000 - $100,000</option>
-                        <option value="100+k"> $100,000+</option>
-                        <option value="prefer-to-discuss"> Prefer to discuss</option>
-                    </select>
                     <div class="section-nav-btns">
                         <button type="button" class="btn-back" onclick="goToSection('section-4',4)"><i
-                                class="bi bi-arrow-left"></i> Back</button>
+                                class="bi bi-arrow-left"></i>
+                            Back</button>
                         <button type="button" class="btn-next" onclick="goToSection('section-6',6)">Next<i
                                 class="bi bi-arrow-right"></i></button>
                     </div>
