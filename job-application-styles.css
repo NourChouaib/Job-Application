@@ -420,13 +420,21 @@ select option{
     background: var(--accent);
     color: #fff;
     margin-left: auto;
-    box-shadow: 0 4px 20px rgba(79, 138, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(79,138,255,0.3);
 }
-
+.btn-next:hover {
+    background: #3a78f0;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 24px rgba(79,138,255,0.4);
+}
 .btn-back {
     background: var(--surface-2);
     color: var(--text-secondary);
     border: 1px solid var(--border);
+}
+.btn-back:hover {
+    background: rgba(255,255,255,0.05);
+    color: var(--text-primary);
 }
 
 .checkbox-grid {
@@ -515,4 +523,49 @@ textarea {
     color: var(--text-secondary);
     max-width: 380px;
     margin: 0 auto;
+}
+
+.terms-label {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    transition: var(--transition);
+}
+.terms-label:hover { border-color: rgba(79,138,255,0.3); }
+.terms-label input[type="checkbox"] {
+    width: 16px; height: 16px;
+    min-width: 16px;
+    accent-color: var(--accent);
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.btn-reset {
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+}
+.btn-reset:hover {
+    color: var(--danger);
+    border-color: rgba(248,113,113,0.35);
+    background: rgba(248,113,113,0.06);
+}
+.btn-submit {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    color: #fff;
+    margin-left: auto;
+    box-shadow: 0 4px 24px rgba(79,138,255,0.35);
+    padding: 0.7rem 1.75rem;
+}
+.btn-submit:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 32px rgba(79,138,255,0.45);
+    filter: brightness(1.08);
 }
